@@ -76,6 +76,7 @@ class _DisplayArea extends StatelessWidget {
           alignment: Alignment.centerRight,
           child: Text(
             text,
+            key: const Key('calculator_display'),
             style: Theme.of(
               context,
             ).textTheme.displayMedium?.copyWith(fontWeight: FontWeight.w300),
