@@ -12,7 +12,7 @@ class CalculatorApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Calculator',
+      title: '電卓',
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
       darkTheme: ThemeData(
         colorScheme: .fromSeed(
