@@ -18,8 +18,16 @@
   - Play Console 提出用URL: https://amatori3.github.io/calculator_app/privacy-policy
   - 公開前に履歴を確認済み（鍵・パスワードの混入なし）。LICENSE は未設定（必要なら追加）
 
+- [x] エミュレータ(AVD `test_avd`, Android 14)でリリースAPKの実動作を確認（2026-09-20）
+  - 表示、ボタン入力、計算（123+456=579、840÷4=210）、ライト/ダーク両テーマを確認
+  - 起動オプション `-no-window -gpu swiftshader_indirect -memory 3072 -cores 6` が必要（既定のRAM 1.5GBだとSystemUIがANRになる）
+- [x] ストア用スクリーンショット4枚を `docs/store-assets/screenshots/` に用意（1080x2160、24bit PNG・アルファなし）
+  - Playの縦横比制限（長辺が短辺の2倍以内）のため `adb shell wm size 1080x2160` で撮影
+- [x] ストア掲載文の下書きを `docs/store-listing.md` に作成
+
 ## 未着手
 
 - [ ] **Play Console デベロッパーアカウント** — $25、本人確認あり。ユーザー本人の作業（代行不可）
-- [ ] ストア掲載素材 — スクリーンショット、簡単な説明文、機能グラフィック(1024x500)
-- [ ] （任意）実機/エミュレータでの最終動作確認 — この開発環境はWSLg上でLinuxデスクトップ版がGPU初期化に失敗し、Web版ビルドも時間がかかり未検証。Android実機かAVDでの確認が望ましい
+- [ ] 機能グラフィック(1024x500) — 未作成。ストア掲載に必須
+- [ ] 掲載文・スクリーンショットの最終確認 — `docs/store-listing.md`（カテゴリ等は仮置き）と `docs/store-assets/screenshots/` をユーザーが確認する
+- [ ] （任意）Android実機での確認 — エミュレータでは確認済み
