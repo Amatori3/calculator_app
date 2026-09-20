@@ -13,10 +13,13 @@
   - 手順は `android/KEYSTORE_SETUP.md` に記載
   - **要確認**: `upload-keystore.jks` とそのパスワードをリポジトリ外（パスワードマネージャー等）にバックアップ済みか未確認のまま
 - [x] プライバシーポリシー草案を `docs/privacy-policy.md` に作成（通信・権限・データ収集なしのシンプルな内容）
+- [x] プライバシーポリシーの公開URLを用意（2026-09-20）
+  - リポジトリ `Amatori3/calculator_app` を public に変更し、GitHub Pages を `main` の `/docs` から配信
+  - Play Console 提出用URL: https://amatori3.github.io/calculator_app/privacy-policy
+  - 公開前に履歴を確認済み（鍵・パスワードの混入なし）。LICENSE は未設定（必要なら追加）
 
 ## 未着手
 
-- [ ] **プライバシーポリシーの公開URL** — `docs/privacy-policy.md` を GitHub Pages 等でホストし、Play Console 提出用のURLを用意する
 - [ ] **Play Console デベロッパーアカウント** — $25、本人確認あり。ユーザー本人の作業（代行不可）
 - [ ] ストア掲載素材 — スクリーンショット、簡単な説明文、機能グラフィック(1024x500)
 - [ ] （任意）実機/エミュレータでの最終動作確認 — この開発環境はWSLg上でLinuxデスクトップ版がGPU初期化に失敗し、Web版ビルドも時間がかかり未検証。Android実機かAVDでの確認が望ましい
